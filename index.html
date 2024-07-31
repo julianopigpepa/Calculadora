@@ -44,9 +44,16 @@
   .calculator button:hover {
     background-color: #e0e0e0;
   }
+  .fundo {
+    background-image: linear-gradient(45deg, grey, black);
+    height: 100vh;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  }
 </style>
 </head>
-<body>
+<body class="fundo">
 
 <div class="calculator">
   <input type="text" id="display" disabled>
@@ -68,7 +75,7 @@
   <br>
   <button onclick="appendToDisplay('0')">0</button>
   <button onclick="appendToDisplay('.')">.</button>
-  <button onclick="clearLast()">CE</button> <!-- Alterei para 'CE' (Clear Entry) -->
+  <button onclick="clearLast()">CE</button>
   <button onclick="appendToDisplay('/')">/</button>
   <br>
   <button onclick="calculate()">=</button>
